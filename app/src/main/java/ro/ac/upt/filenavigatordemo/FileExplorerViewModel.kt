@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 
 class FileExplorerViewModel : ViewModel() {
 
-    private val platformFileExplorer = PlatformFileExplorer()
+    public val platformFileExplorer = PlatformFileExplorer()
 
     val currentPath = MutableLiveData<FileEntry>()
     val listedFiles = MutableLiveData<List<FileEntry>>()
